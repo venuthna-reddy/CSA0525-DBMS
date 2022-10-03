@@ -1,0 +1,97 @@
+mysql> use student;
+Database changed
+mysql> desc student;
++----------+----------+------+-----+---------+-------+
+| Field    | Type     | Null | Key | Default | Extra |
++----------+----------+------+-----+---------+-------+
+| regno    | int(10)  | YES  |     | NULL    |       |
+| name     | char(20) | YES  |     | NULL    |       |
+| gender   | char(10) | YES  |     | NULL    |       |
+| DOB      | int(10)  | YES  |     | NULL    |       |
+| mobileno | int(10)  | YES  |     | NULL    |       |
+| city     | char(20) | NO   | PRI |         |       |
++----------+----------+------+-----+---------+-------+
+6 rows in set (0.04 sec)
+
+mysql> use faculty;
+Database changed
+mysql> desc faculty;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| fac_no   | varchar(4)  | NO   | PRI |         |       |
+| fac_name | varchar(15) | YES  |     | NULL    |       |
+| gender   | char(1)     | YES  |     | NULL    |       |
+| DOB      | date        | YES  |     | NULL    |       |
+| DOJ      | date        | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+5 rows in set (0.02 sec)
+
+mysql> create table dapartment(deptno int(10),department char(20),depthead char(10));
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> desc department;
+ERROR 1146 (42S02): Table 'faculty.department' doesn't exist
+mysql> create table department(deptno int(10),department char(20),depthead char(10));
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> desc department;
++------------+----------+------+-----+---------+-------+
+| Field      | Type     | Null | Key | Default | Extra |
++------------+----------+------+-----+---------+-------+
+| deptno     | int(10)  | YES  |     | NULL    |       |
+| department | char(20) | YES  |     | NULL    |       |
+| depthead   | char(10) | YES  |     | NULL    |       |
++------------+----------+------+-----+---------+-------+
+3 rows in set (0.02 sec)
+
+mysql> alter table department add primary key(deptno);
+Query OK, 0 rows affected (0.03 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc department;
++------------+----------+------+-----+---------+-------+
+| Field      | Type     | Null | Key | Default | Extra |
++------------+----------+------+-----+---------+-------+
+| deptno     | int(10)  | NO   | PRI | 0       |       |
+| department | char(20) | YES  |     | NULL    |       |
+| depthead   | char(10) | YES  |     | NULL    |       |
++------------+----------+------+-----+---------+-------+
+3 rows in set (0.02 sec)
+
+mysql> create table course(courseno int(10),coursedesc char(20),coursetype char(10),semno int(10),hallno int(10),facno int(10));
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> desc course;
++------------+----------+------+-----+---------+-------+
+| Field      | Type     | Null | Key | Default | Extra |
++------------+----------+------+-----+---------+-------+
+| courseno   | int(10)  | YES  |     | NULL    |       |
+| coursedesc | char(20) | YES  |     | NULL    |       |
+| coursetype | char(10) | YES  |     | NULL    |       |
+| semno      | int(10)  | YES  |     | NULL    |       |
+| hallno     | int(10)  | YES  |     | NULL    |       |
+| facno      | int(10)  | YES  |     | NULL    |       |
++------------+----------+------+-----+---------+-------+
+6 rows in set (0.01 sec)
+
+mysql> alter table course add primary key(courseno);
+Query OK, 0 rows affected (0.02 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> alter table course add check(semno>=1&&semno<=6);
+Query OK, 0 rows affected (0.02 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc course;
++------------+----------+------+-----+---------+-------+
+| Field      | Type     | Null | Key | Default | Extra |
++------------+----------+------+-----+---------+-------+
+| courseno   | int(10)  | NO   | PRI | 0       |       |
+| coursedesc | char(20) | YES  |     | NULL    |       |
+| coursetype | char(10) | YES  |     | NULL    |       |
+| semno      | int(10)  | YES  |     | NULL    |       |
+| hallno     | int(10)  | YES  |     | NULL    |       |
+| facno      | int(10)  | YES  |     | NULL    |       |
++------------+----------+------+-----+---------+-------+
+6 rows in set (0.01 sec)
