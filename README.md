@@ -40,3 +40,23 @@ output:<br/>
 
 ##Rxperiment-5-SELECT WITH VARIOUS CLAUSE-WHERE,PATTERN MATCHING LINK-https://github.com/venuthna-reddy/CSA0525-DBMS/blob/main/Exp-5
 output:<br/>
+1.<br/>
+![5-1](https://user-images.githubusercontent.com/113232880/193886894-95251d87-11e8-459b-9cb5-f4401f9dd72d.png)
+2.<br/>
+![5-2](https://user-images.githubusercontent.com/113232880/193886963-19be7e1d-1908-456b-b4cd-8005d90941a3.png)
+3.<br/>
+![5-3](https://user-images.githubusercontent.com/113232880/193887062-42af910e-41e8-4b91-80c3-d924ce25911e.png)
+4.<br/>
+![5-4](https://user-images.githubusercontent.com/113232880/193887217-c3beb7ff-1112-47ff-80fb-5b4e139a9f64.png)
+5.<br/>
+![5-5](https://user-images.githubusercontent.com/113232880/193887302-0698ea3a-8dc9-46ae-8aa3-5ae1fa3ac8a1.png)
+6.<br/>
+![5-6](https://user-images.githubusercontent.com/113232880/193887371-86a8449a-b712-4fd3-bf9b-6d447b5d2f12.png)
+7.<br/>
+![5-7](https://user-images.githubusercontent.com/113232880/193887430-4a4758d8-0434-4dcb-998a-6823f8f4791c.png)
+8.<br/>
+![5-8](https://user-images.githubusercontent.com/113232880/193887597-5c506903-da3a-4143-a4a9-5c726df817b6.png)
+9.<br/>
+![5-9](https://user-images.githubusercontent.com/113232880/193887695-98aab557-12c4-439a-89db-6f792c756c18.png)
+10.<br/>
+![5-10](https://user-images.githubusercontent.com/113232880/193887780-e646262c-f93a-4d00-8b3e-d0c73b79c4df.png)
