@@ -11,7 +11,7 @@ output:<br/>
 ![1 output 4](https://user-images.githubusercontent.com/113232880/193614445-7e6585a8-d9f5-4eff-8550-0faba8aa5182.png)
 5.<br/>
 ![1 output-5](https://user-images.githubusercontent.com/113232880/193614522-5e677203-2e98-468f-b18c-d2351fae9b5b.png)
-##Experiment:2-DDL COMMANDS WITH CONSTRAINTS<br/>link-https://github.com/venuthna-reddy/CSA0525-DBMS/commit/0323dedc6e6f353d6fb42eba102503cd2247aaae
+##Experiment:2-DDL COMMANDS WITH CONSTRAINTS<br/>link-https://github.com/venuthna-reddy/CSA0525-DBMS/blob/main/Exp-2
 output:<br/>
 1.<br/>
 ![2 o-1](https://user-images.githubusercontent.com/113232880/193640010-0c00c6ae-66be-4545-94ee-6dc8fd273975.png)
