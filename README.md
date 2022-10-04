@@ -1,5 +1,5 @@
 # CSA0525-DBMS
-##Experiment:1-DDL COMMANDS<br/>link-https://github.com/venuthna-reddy/CSA0525-DBMS/commit/0323dedc6e6f353d6fb42eba102503cd2247aaae
+##Experiment:1-DDL COMMANDS<br/>link-https://github.com/venuthna-reddy/CSA0525-DBMS/blob/main/Exp-1
 output:<br/>
 1.<br/>
 ![Screenshot (601)](https://user-images.githubusercontent.com/113232880/193612186-303faf52-335d-4bc5-b363-7403638abe80.png)
