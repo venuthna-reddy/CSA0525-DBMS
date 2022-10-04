@@ -22,4 +22,18 @@ output:<br/>
 ![2 o-3](https://user-images.githubusercontent.com/113232880/193640163-abc310a9-8217-4f9e-b630-58001955c7ab.png)
 4.<br/>
 ![2 o-4](https://user-images.githubusercontent.com/113232880/193640271-33a75e0a-4440-42ab-80ca-a1fd7c3813fb.png)
-##Experiment-3&4-DDL COMMANDS-INSERT,SELECT,UPDATE,DELETE<br/>
+
+##Experiment-3&4-DDL COMMANDS-INSERT,SELECT,UPDATE,DELETE<br/>link-https://github.com/venuthna-reddy/CSA0525-DBMS/blob/main/Exp-3%264
+output:<br/>
+1.<br/>
+![10](https://user-images.githubusercontent.com/113232880/193841933-443b7583-b104-41f8-8794-d28325eb675b.png)
+2.<br/>
+![11](https://user-images.githubusercontent.com/113232880/193842042-9eb67521-542d-4a65-a4e8-1c52b4378ced.png)
+3.<br/>
+![12](https://user-images.githubusercontent.com/113232880/193842138-681ca34f-48f7-4d16-ba60-e418a5d5f95c.png)
+4.<br/>
+![13](https://user-images.githubusercontent.com/113232880/193842367-15ac6a09-6dd3-4757-86bf-3bc18331b8d9.png)
+5.<br/>
+![15](https://user-images.githubusercontent.com/113232880/193842495-b0933b2c-2145-44e5-abb3-f8d5d664710f.png)
+6.<br/>
+![16](https://user-images.githubusercontent.com/113232880/193842586-d0ccd8d4-2377-4555-b544-80acb3015970.png)
