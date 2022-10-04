@@ -37,3 +37,6 @@ output:<br/>
 ![15](https://user-images.githubusercontent.com/113232880/193842495-b0933b2c-2145-44e5-abb3-f8d5d664710f.png)
 6.<br/>
 ![16](https://user-images.githubusercontent.com/113232880/193842586-d0ccd8d4-2377-4555-b544-80acb3015970.png)
+
+##Rxperiment-5-SELECT WITH VARIOUS CLAUSE-WHERE,PATTERN MATCHING LINK-https://github.com/venuthna-reddy/CSA0525-DBMS/blob/main/Exp-5
+output:<br/>
