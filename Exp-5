@@ -1,0 +1,168 @@
+mysql> use student;
+Database changed
+mysql> select * from stu;
++--------+----------+------+--------+------------+------------+-----------+----------+
+| Rollno | Name     | Dept | Gender | DOB        | city       | mobile_no | courseno |
++--------+----------+------+--------+------------+------------+-----------+----------+
+|    271 | sai      | cse  | M      | 2003-10-30 | chitoor    |  98262944 | NULL     |
+|    272 | esar     | cse  | M      | 2002-09-14 | Vellore    |  98262324 | NULL     |
+|    273 | venuthna | cse  | F      | 2003-06-26 | CHENNAI    |   6324234 | NULL     |
+|    274 | vikas    | cse  | M      | 2002-01-16 | cuddalaore | 637435711 | NULL     |
+| 192011 | amit     | cse  | M      | 1998-01-22 | chennai    |     91007 | c001     |
+| 192012 | raju     | cse  | M      | 2000-01-22 | chennai    |     93409 | c001     |
+| 192013 | sasi     | cse  | M      | 2003-01-22 | chennai    |      3409 | c002     |
+| 192014 | rakhi    | cse  | M      | 2003-06-15 | kerala     |      9848 | c003     |
+| 192015 | divya    | cse  | F      | 2003-07-22 | chittoor   |      6890 | c001     |
++--------+----------+------+--------+------------+------------+-----------+----------+
+9 rows in set (0.00 sec)
+
+mysql> insert into stu values(192016,'anupama','cse','F','2003-11-22','chittoor',6790,'c001');
+Query OK, 1 row affected (0.02 sec)
+
+mysql> insert into stu values(192017,'sushma','cse','F','2003-12-22','chittoor',1234,'c002');
+Query OK, 1 row affected (0.02 sec)
+
+mysql> select *from stu;
++--------+----------+------+--------+------------+------------+-----------+----------+
+| Rollno | Name     | Dept | Gender | DOB        | city       | mobile_no | courseno |
++--------+----------+------+--------+------------+------------+-----------+----------+
+|    271 | sai      | cse  | M      | 2003-10-30 | chitoor    |  98262944 | NULL     |
+|    272 | esar     | cse  | M      | 2002-09-14 | Vellore    |  98262324 | NULL     |
+|    273 | venuthna | cse  | F      | 2003-06-26 | CHENNAI    |   6324234 | NULL     |
+|    274 | vikas    | cse  | M      | 2002-01-16 | cuddalaore | 637435711 | NULL     |
+| 192011 | amit     | cse  | M      | 1998-01-22 | chennai    |     91007 | c001     |
+| 192012 | raju     | cse  | M      | 2000-01-22 | chennai    |     93409 | c001     |
+| 192013 | sasi     | cse  | M      | 2003-01-22 | chennai    |      3409 | c002     |
+| 192014 | rakhi    | cse  | M      | 2003-06-15 | kerala     |      9848 | c003     |
+| 192015 | divya    | cse  | F      | 2003-07-22 | chittoor   |      6890 | c001     |
+| 192016 | anupama  | cse  | F      | 2003-11-22 | chittoor   |      6790 | c001     |
+| 192017 | sushma   | cse  | F      | 2003-12-22 | chittoor   |      1234 | c002     |
++--------+----------+------+--------+------------+------------+-----------+----------+
+11 rows in set (0.00 sec)
+
+mysql> select *from stu where courseno ="c001";
++--------+---------+------+--------+------------+----------+-----------+----------+
+| Rollno | Name    | Dept | Gender | DOB        | city     | mobile_no | courseno |
++--------+---------+------+--------+------------+----------+-----------+----------+
+| 192011 | amit    | cse  | M      | 1998-01-22 | chennai  |     91007 | c001     |
+| 192012 | raju    | cse  | M      | 2000-01-22 | chennai  |     93409 | c001     |
+| 192015 | divya   | cse  | F      | 2003-07-22 | chittoor |      6890 | c001     |
+| 192016 | anupama | cse  | F      | 2003-11-22 | chittoor |      6790 | c001     |
++--------+---------+------+--------+------------+----------+-----------+----------+
+4 rows in set (0.00 sec)
+
+mysql> use faculty;
+Database changed
+mysql> select * from fac
+    -> fal;
+ERROR 1146 (42S02): Table 'faculty.fac' doesn't exist
+mysql> select * from fal;
++------------+----------+--------+------------+------------+-----------+------+------+
+| Faculty_id | Fac_Name | gender | DOB        | DOJ        | Mobile_no | dept | age  |
++------------+----------+--------+------------+------------+-----------+------+------+
+| 1221       | ESWAR    | M      | 2000-01-15 | 2012-01-13 |   7823228 | IT   |   24 |
+| 1451       | VENTHNA  | F      | 2004-06-27 | 2021-05-11 |    723458 | ECE  |   57 |
+| 2321       | RAM      | M      | 1983-05-01 | 2004-05-16 |     83235 | EEE  |   34 |
++------------+----------+--------+------------+------------+-----------+------+------+
+3 rows in set (0.00 sec)
+
+mysql> select * from fal where doj < "2014-11-01";
++------------+----------+--------+------------+------------+-----------+------+------+
+| Faculty_id | Fac_Name | gender | DOB        | DOJ        | Mobile_no | dept | age  |
++------------+----------+--------+------------+------------+-----------+------+------+
+| 1221       | ESWAR    | M      | 2000-01-15 | 2012-01-13 |   7823228 | IT   |   24 |
+| 2321       | RAM      | M      | 1983-05-01 | 2004-05-16 |     83235 | EEE  |   34 |
++------------+----------+--------+------------+------------+-----------+------+------+
+2 rows in set (0.00 sec)
+
+mysql> use student;
+Database changed
+mysql> select * from stu;
++--------+----------+------+--------+------------+------------+-----------+----------+
+| Rollno | Name     | Dept | Gender | DOB        | city       | mobile_no | courseno |
++--------+----------+------+--------+------------+------------+-----------+----------+
+|    271 | sai      | cse  | M      | 2003-10-30 | chitoor    |  98262944 | NULL     |
+|    272 | esar     | cse  | M      | 2002-09-14 | Vellore    |  98262324 | NULL     |
+|    273 | venuthna | cse  | F      | 2003-06-26 | CHENNAI    |   6324234 | NULL     |
+|    274 | vikas    | cse  | M      | 2002-01-16 | cuddalaore | 637435711 | NULL     |
+| 192011 | amit     | cse  | M      | 1998-01-22 | chennai    |     91007 | c001     |
+| 192012 | raju     | cse  | M      | 2000-01-22 | chennai    |     93409 | c001     |
+| 192013 | sasi     | cse  | M      | 2003-01-22 | chennai    |      3409 | c002     |
+| 192014 | rakhi    | cse  | M      | 2003-06-15 | kerala     |      9848 | c003     |
+| 192015 | divya    | cse  | F      | 2003-07-22 | chittoor   |      6890 | c001     |
+| 192016 | anupama  | cse  | F      | 2003-11-22 | chittoor   |      6790 | c001     |
+| 192017 | sushma   | cse  | F      | 2003-12-22 | chittoor   |      1234 | c002     |
++--------+----------+------+--------+------------+------------+-----------+----------+
+11 rows in set (0.01 sec)
+
+mysql> select * from stu where name like '%ma%';
++--------+---------+------+--------+------------+----------+-----------+----------+
+| Rollno | Name    | Dept | Gender | DOB        | city     | mobile_no | courseno |
++--------+---------+------+--------+------------+----------+-----------+----------+
+| 192016 | anupama | cse  | F      | 2003-11-22 | chittoor |      6790 | c001     |
+| 192017 | sushma  | cse  | F      | 2003-12-22 | chittoor |      1234 | c002     |
++--------+---------+------+--------+------------+----------+-----------+----------+
+2 rows in set (0.00 sec)
+
+mysql> select * from stu;
++--------+----------+------+--------+------------+------------+-----------+----------+
+| Rollno | Name     | Dept | Gender | DOB        | city       | mobile_no | courseno |
++--------+----------+------+--------+------------+------------+-----------+----------+
+|    271 | sai      | cse  | M      | 2003-10-30 | chitoor    |  98262944 | NULL     |
+|    272 | esar     | cse  | M      | 2002-09-14 | Vellore    |  98262324 | NULL     |
+|    273 | venuthna | cse  | F      | 2003-06-26 | CHENNAI    |   6324234 | NULL     |
+|    274 | vikas    | cse  | M      | 2002-01-16 | cuddalaore | 637435711 | NULL     |
+| 192011 | amit     | cse  | M      | 1998-01-22 | chennai    |     91007 | c001     |
+| 192012 | raju     | cse  | M      | 2000-01-22 | chennai    |     93409 | c001     |
+| 192013 | sasi     | cse  | M      | 2003-01-22 | chennai    |      3409 | c002     |
+| 192014 | rakhi    | cse  | M      | 2003-06-15 | kerala     |      9848 | c003     |
+| 192015 | divya    | cse  | F      | 2003-07-22 | chittoor   |      6890 | c001     |
+| 192016 | anupama  | cse  | F      | 2003-11-22 | chittoor   |      6790 | c001     |
+| 192017 | sushma   | cse  | F      | 2003-12-22 | chittoor   |      1234 | c002     |
++--------+----------+------+--------+------------+------------+-----------+----------+
+11 rows in set (0.00 sec)
+
+mysql> select * from stu wher char_length(name) !=6;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'char_length(name) !=6' at line 1
+mysql> select * from stu where char_length(name) !=6;
++--------+----------+------+--------+------------+------------+-----------+----------+
+| Rollno | Name     | Dept | Gender | DOB        | city       | mobile_no | courseno |
++--------+----------+------+--------+------------+------------+-----------+----------+
+|    271 | sai      | cse  | M      | 2003-10-30 | chitoor    |  98262944 | NULL     |
+|    272 | esar     | cse  | M      | 2002-09-14 | Vellore    |  98262324 | NULL     |
+|    273 | venuthna | cse  | F      | 2003-06-26 | CHENNAI    |   6324234 | NULL     |
+|    274 | vikas    | cse  | M      | 2002-01-16 | cuddalaore | 637435711 | NULL     |
+| 192011 | amit     | cse  | M      | 1998-01-22 | chennai    |     91007 | c001     |
+| 192012 | raju     | cse  | M      | 2000-01-22 | chennai    |     93409 | c001     |
+| 192013 | sasi     | cse  | M      | 2003-01-22 | chennai    |      3409 | c002     |
+| 192014 | rakhi    | cse  | M      | 2003-06-15 | kerala     |      9848 | c003     |
+| 192015 | divya    | cse  | F      | 2003-07-22 | chittoor   |      6890 | c001     |
+| 192016 | anupama  | cse  | F      | 2003-11-22 | chittoor   |      6790 | c001     |
++--------+----------+------+--------+------------+------------+-----------+----------+
+10 rows in set (0.01 sec)
+
+mysql> select *from stu;
++--------+----------+------+--------+------------+------------+-----------+----------+
+| Rollno | Name     | Dept | Gender | DOB        | city       | mobile_no | courseno |
++--------+----------+------+--------+------------+------------+-----------+----------+
+|    271 | sai      | cse  | M      | 2003-10-30 | chitoor    |  98262944 | NULL     |
+|    272 | esar     | cse  | M      | 2002-09-14 | Vellore    |  98262324 | NULL     |
+|    273 | venuthna | cse  | F      | 2003-06-26 | CHENNAI    |   6324234 | NULL     |
+|    274 | vikas    | cse  | M      | 2002-01-16 | cuddalaore | 637435711 | NULL     |
+| 192011 | amit     | cse  | M      | 1998-01-22 | chennai    |     91007 | c001     |
+| 192012 | raju     | cse  | M      | 2000-01-22 | chennai    |     93409 | c001     |
+| 192013 | sasi     | cse  | M      | 2003-01-22 | chennai    |      3409 | c002     |
+| 192014 | rakhi    | cse  | M      | 2003-06-15 | kerala     |      9848 | c003     |
+| 192015 | divya    | cse  | F      | 2003-07-22 | chittoor   |      6890 | c001     |
+| 192016 | anupama  | cse  | F      | 2003-11-22 | chittoor   |      6790 | c001     |
+| 192017 | sushma   | cse  | F      | 2003-12-22 | chittoor   |      1234 | c002     |
++--------+----------+------+--------+------------+------------+-----------+----------+
+11 rows in set (0.00 sec)
+
+mysql> select * from stu where name like '%th%';
++--------+----------+------+--------+------------+---------+-----------+----------+
+| Rollno | Name     | Dept | Gender | DOB        | city    | mobile_no | courseno |
++--------+----------+------+--------+------------+---------+-----------+----------+
+|    273 | venuthna | cse  | F      | 2003-06-26 | CHENNAI |   6324234 | NULL     |
++--------+----------+------+--------+------------+---------+-----------+----------+
+1 row in set (0.00 sec)
