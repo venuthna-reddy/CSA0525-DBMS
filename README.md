@@ -98,3 +98,11 @@ output:<br/>
 ##Experiment-8-SUB QUERY & CORRELATED QUERY LINK-https://github.com/venuthna-reddy/CSA0525-DBMS/blob/main/Exp-8
 output:br/>
 1.<br/>
+![8-1](https://user-images.githubusercontent.com/113232880/194070896-6c4fc6e8-3440-4ab0-bb3c-056da3185fb7.png)
+2.<br/>
+![8-2](https://user-images.githubusercontent.com/113232880/194070977-074fb3df-4c77-41de-b769-aed956964a0d.png)
+3.<br/>
+![8-3](https://user-images.githubusercontent.com/113232880/194071039-cb2a7bc6-1347-40c4-bcdd-b88f11a4c512.png)
+4.<br/>
+![8-4](https://user-images.githubusercontent.com/113232880/194071118-d1d7fa0a-dfea-48ea-a247-350e10360104.png)
+
