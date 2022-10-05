@@ -61,7 +61,7 @@ output:<br/>
 10.<br/>
 ![5-10](https://user-images.githubusercontent.com/113232880/193887780-e646262c-f93a-4d00-8b3e-d0c73b79c4df.png)
 
-##Experiment-6-select with various clause link-https://github.com/venuthna-reddy/CSA0525-DBMS/blob/main/Exp-6
+##Experiment-6-SELECT WITH VARIOUS CLAUSE-BETWEEN,IN,AGGREGATE FUNCTION link-https://github.com/venuthna-reddy/CSA0525-DBMS/blob/main/Exp-6
 output:<br/>
 1.<br/>
 ![6-1](https://user-images.githubusercontent.com/113232880/194048657-4023e99d-598c-4aec-9b18-f82ab0dc84d0.png)
@@ -83,3 +83,5 @@ output:<br/>
 ![6-9](https://user-images.githubusercontent.com/113232880/194049174-781ffe2d-e5fe-41cc-b3a1-b3248ff0da7e.png)
 10.<br/>
 ![6-10](https://user-images.githubusercontent.com/113232880/194049231-92240874-0490-4b2c-9616-bae488ee54bc.png)
+
+##Experiment-7-SELECT WITH VARIOUS CLAUSE-GROUP BY,HAVING,ORDER BY link-
