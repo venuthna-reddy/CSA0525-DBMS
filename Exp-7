@@ -1,0 +1,106 @@
+mysql> select *from stu;
++--------+---------+------+--------+------------+----------+-----------+----------+
+| Rollno | Name    | Dept | Gender | DOB        | city     | mobile_no | courseno |
++--------+---------+------+--------+------------+----------+-----------+----------+
+| 192011 | amit    | cse  | M      | 1998-01-22 | chennai  |     91007 | c001     |
+| 192012 | raju    | cse  | M      | 2000-01-22 | chennai  |     93409 | c001     |
+| 192013 | sasi    | cse  | M      | 2003-01-22 | chennai  |      3409 | c002     |
+| 192014 | rakhi   | cse  | M      | 2003-06-15 | kerala   |      9848 | c003     |
+| 192015 | divya   | cse  | F      | 2003-07-22 | chittoor |      6890 | c001     |
+| 192016 | anupama | cse  | F      | 2003-11-22 | chittoor |      6790 | c001     |
+| 192017 | sushma  | cse  | F      | 2003-12-22 | chittoor |      1234 | c002     |
++--------+---------+------+--------+------------+----------+-----------+----------+
+7 rows in set (0.00 sec)
+
+mysql> select courseno,count(Rollno) from stu group by courseno;
++----------+---------------+
+| courseno | count(Rollno) |
++----------+---------------+
+| c001     |             4 |
+| c002     |             2 |
+| c003     |             1 |
++----------+---------------+
+3 rows in set (0.00 sec)
+
+mysql> select* from stu;
++--------+---------+------+--------+------------+----------+-----------+----------+
+| Rollno | Name    | Dept | Gender | DOB        | city     | mobile_no | courseno |
++--------+---------+------+--------+------------+----------+-----------+----------+
+| 192011 | amit    | cse  | M      | 1998-01-22 | chennai  |     91007 | c001     |
+| 192012 | raju    | cse  | M      | 2000-01-22 | chennai  |     93409 | c001     |
+| 192013 | sasi    | cse  | M      | 2003-01-22 | chennai  |      3409 | c002     |
+| 192014 | rakhi   | cse  | M      | 2003-06-15 | kerala   |      9848 | c003     |
+| 192015 | divya   | cse  | F      | 2003-07-22 | chittoor |      6890 | c001     |
+| 192016 | anupama | cse  | F      | 2003-11-22 | chittoor |      6790 | c001     |
+| 192017 | sushma  | cse  | F      | 2003-12-22 | chittoor |      1234 | c002     |
++--------+---------+------+--------+------------+----------+-----------+----------+
+7 rows in set (0.00 sec)
+
+mysql> select Rollno,count(couseno) from stu group by Rollno;
+ERROR 1054 (42S22): Unknown column 'couseno' in 'field list'
+mysql> select Rollno,count(courseno) from stu group by Rollno
+    ->  select Rollno,count(courseno) from stu group by Rollno;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'select Rollno,count(courseno) from stu group by Rollno' at line 2
+mysql> select Rollno,count(courseno) from stu group by Rollno;
++--------+-----------------+
+| Rollno | count(courseno) |
++--------+-----------------+
+| 192011 |               1 |
+| 192012 |               1 |
+| 192013 |               1 |
+| 192014 |               1 |
+| 192015 |               1 |
+| 192016 |               1 |
+| 192017 |               1 |
++--------+-----------------+
+7 rows in set (0.00 sec)
+
+mysql> select* from stu;
++--------+---------+------+--------+------------+----------+-----------+----------+
+| Rollno | Name    | Dept | Gender | DOB        | city     | mobile_no | courseno |
++--------+---------+------+--------+------------+----------+-----------+----------+
+| 192011 | amit    | cse  | M      | 1998-01-22 | chennai  |     91007 | c001     |
+| 192012 | raju    | cse  | M      | 2000-01-22 | chennai  |     93409 | c001     |
+| 192013 | sasi    | cse  | M      | 2003-01-22 | chennai  |      3409 | c002     |
+| 192014 | rakhi   | cse  | M      | 2003-06-15 | kerala   |      9848 | c003     |
+| 192015 | divya   | cse  | F      | 2003-07-22 | chittoor |      6890 | c001     |
+| 192016 | anupama | cse  | F      | 2003-11-22 | chittoor |      6790 | c001     |
+| 192017 | sushma  | cse  | F      | 2003-12-22 | chittoor |      1234 | c002     |
++--------+---------+------+--------+------------+----------+-----------+----------+
+7 rows in set (0.00 sec)
+
+mysql> select Rollno,Name,Gender,mobile_no from stu order by Rollno;
++--------+---------+--------+-----------+
+| Rollno | Name    | Gender | mobile_no |
++--------+---------+--------+-----------+
+| 192011 | amit    | M      |     91007 |
+| 192012 | raju    | M      |     93409 |
+| 192013 | sasi    | M      |      3409 |
+| 192014 | rakhi   | M      |      9848 |
+| 192015 | divya   | F      |      6890 |
+| 192016 | anupama | F      |      6790 |
+| 192017 | sushma  | F      |      1234 |
++--------+---------+--------+-----------+
+7 rows in set (0.00 sec)
+
+mysql> use faculty;
+Database changed
+mysql> select * from fal;
++------------+----------+--------+------------+------------+-----------+------+------+
+| Faculty_id | Fac_Name | gender | DOB        | DOJ        | Mobile_no | dept | age  |
++------------+----------+--------+------------+------------+-----------+------+------+
+| 1221       | ESWAR    | M      | 2000-01-15 | 2012-01-13 |   7823228 | IT   |   24 |
+| 1451       | VENTHNA  | F      | 2004-06-27 | 2021-05-11 |    723458 | ECE  |   57 |
+| 2321       | RAM      | M      | 1983-05-01 | 2004-05-16 |     83235 | EEE  |   34 |
++------------+----------+--------+------------+------------+-----------+------+------+
+3 rows in set (0.02 sec)
+
+mysql> select Fac_Name,DOB from fal order by DOB;
++----------+------------+
+| Fac_Name | DOB        |
++----------+------------+
+| RAM      | 1983-05-01 |
+| ESWAR    | 2000-01-15 |
+| VENTHNA  | 2004-06-27 |
++----------+------------+
+3 rows in set (0.00 sec)
