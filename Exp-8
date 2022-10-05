@@ -1,0 +1,138 @@
+mysql> create database assessment;
+Query OK, 1 row affected (0.02 sec)
+
+mysql> use assessment;
+Database changed
+mysql> create table assessment(register_no int,name varchar(12),course_no varchar(4),marks int,faculty_id varchar(4),assessment int);
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> insert into assessment values(192011273,'vinu','c001',90,'2001',1);
+Query OK, 1 row affected (0.00 sec)
+
+mysql>  insert into assessment values(192011273,'vinu','c001',90,'2002',2);
+Query OK, 1 row affected (0.02 sec)
+
+mysql>  insert into assessment values(192011273,'vinu','c002',70,'2002',1);
+Query OK, 1 row affected (0.01 sec)
+
+mysql>  insert into assessment values(192011067,'divya','c001',70,'2001',1);
+Query OK, 1 row affected (0.02 sec)
+
+mysql>  insert into assessment values(192011067,'divya','c002',79,'2001',1);
+Query OK, 1 row affected (0.00 sec)
+
+mysql>  insert into assessment values(192011197,'manu','c002',80,'2002',2);
+Query OK, 1 row affected (0.00 sec)
+
+mysql>  insert into assessment values(192011001,'gresh','c002',65,'2002',1);
+Query OK, 1 row affected (0.01 sec)
+
+mysql>  insert into assessment values(192011001,'gresh','c001',98,'2001',2);
+Query OK, 1 row affected (0.02 sec)
+
+mysql>  insert into assessment values(192011010,'sai','c001',92,'2001',1);
+Query OK, 1 row affected (0.00 sec)
+
+mysql>  insert into assessment values(192011342,'niki','c002',39,'2003',2);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> show * from assessment;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* from assessment' at line 1
+mysql> show * from assessment;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* from assessment' at line 1
+mysql> select * from assessment;
++-------------+-------+-----------+-------+------------+------------+
+| register_no | name  | course_no | marks | faculty_id | assessment |
++-------------+-------+-----------+-------+------------+------------+
+|   192011273 | vinu  | c001      |    90 | 2001       |          1 |
+|   192011273 | vinu  | c001      |    90 | 2002       |          2 |
+|   192011273 | vinu  | c002      |    70 | 2002       |          1 |
+|   192011067 | divya | c001      |    70 | 2001       |          1 |
+|   192011067 | divya | c002      |    79 | 2001       |          1 |
+|   192011197 | manu  | c002      |    80 | 2002       |          2 |
+|   192011001 | gresh | c002      |    65 | 2002       |          1 |
+|   192011001 | gresh | c001      |    98 | 2001       |          2 |
+|   192011010 | sai   | c001      |    92 | 2001       |          1 |
+|   192011342 | niki  | c002      |    39 | 2003       |          2 |
++-------------+-------+-----------+-------+------------+------------+
+10 rows in set (0.00 sec)
+mysql> select register_no,name,marks from assessment where marks=(select max(high_score) from (select register_no,name ,max(marks) as high_score from assessment order by high_score) as high_score);
++-------------+-------+-------+
+| register_no | name  | marks |
++-------------+-------+-------+
+|   192011001 | gresh |    98 |
++-------------+-------+-------+
+1 row in set (0.00 sec)
+
+mysql> select * from assessment;
++-------------+-------+-----------+-------+------------+------------+
+| register_no | name  | course_no | marks | faculty_id | assessment |
++-------------+-------+-----------+-------+------------+------------+
+|   192011273 | vinu  | c001      |    90 | 2001       |          1 |
+|   192011273 | vinu  | c001      |    90 | 2002       |          2 |
+|   192011273 | vinu  | c002      |    70 | 2002       |          1 |
+|   192011067 | divya | c001      |    70 | 2001       |          1 |
+|   192011067 | divya | c002      |    79 | 2001       |          1 |
+|   192011197 | manu  | c002      |    80 | 2002       |          2 |
+|   192011001 | gresh | c002      |    65 | 2002       |          1 |
+|   192011001 | gresh | c001      |    98 | 2001       |          2 |
+|   192011010 | sai   | c001      |    92 | 2001       |          1 |
+|   192011342 | niki  | c002      |    39 | 2003       |          2 |
++-------------+-------+-----------+-------+------------+------------+
+10 rows in set (0.00 sec)
+mysql> select register_no,name,max(mycount) from(select register_no,name,count(assessment) as mycount from assessment group by register_no) as max_count;
++-------------+-------+--------------+
+| register_no | name  | max(mycount) |
++-------------+-------+--------------+
+|   192011001 | gresh |            3 |
++-------------+-------+--------------+
+1 row in set (0.00 sec)
+
+mysql> use faculty;
+Database changed
+mysql> select*from fal;
++------------+----------+--------+------------+------------+-----------+------+------+
+| Faculty_id | Fac_Name | gender | DOB        | DOJ        | Mobile_no | dept | age  |
++------------+----------+--------+------------+------------+-----------+------+------+
+| 1221       | ESWAR    | M      | 2000-01-15 | 2012-01-13 |   7823228 | IT   |   24 |
+| 1451       | VENTHNA  | F      | 2004-06-27 | 2021-05-11 |    723458 | ECE  |   57 |
+| 2321       | RAM      | M      | 1983-05-01 | 2004-05-16 |     83235 | EEE  |   34 |
++------------+----------+--------+------------+------------+-----------+------+------+
+3 rows in set (0.00 sec)
+
+mysql> select * from fal where DOJ =(select max(DOJ) from fal);
++------------+----------+--------+------------+------------+-----------+------+------+
+| Faculty_id | Fac_Name | gender | DOB        | DOJ        | Mobile_no | dept | age  |
++------------+----------+--------+------------+------------+-----------+------+------+
+| 1451       | VENTHNA  | F      | 2004-06-27 | 2021-05-11 |    723458 | ECE  |   57 |
++------------+----------+--------+------------+------------+-----------+------+------+
+1 row in set (0.00 sec)
+
+mysql> select * from assessment;
+ERROR 1146 (42S02): Table 'faculty.assessment' doesn't exist
+mysql> use assessment;
+Database changed
+mysql> select * from assessment;
++-------------+-------+-----------+-------+------------+------------+
+| register_no | name  | course_no | marks | faculty_id | assessment |
++-------------+-------+-----------+-------+------------+------------+
+|   192011273 | vinu  | c001      |    90 | 2001       |          1 |
+|   192011273 | vinu  | c001      |    90 | 2002       |          2 |
+|   192011273 | vinu  | c002      |    70 | 2002       |          1 |
+|   192011067 | divya | c001      |    70 | 2001       |          1 |
+|   192011067 | divya | c002      |    79 | 2001       |          1 |
+|   192011197 | manu  | c002      |    80 | 2002       |          2 |
+|   192011001 | gresh | c002      |    65 | 2002       |          1 |
+|   192011001 | gresh | c001      |    98 | 2001       |          2 |
+|   192011010 | sai   | c001      |    92 | 2001       |          1 |
+|   192011342 | niki  | c002      |    39 | 2003       |          2 |
++-------------+-------+-----------+-------+------------+------------+
+10 rows in set (0.00 sec)
+
+mysql> select course_no,marks,avg(marks) from assessment where marks > (select avg(marks) from assessment);
++-----------+-------+------------+
+| course_no | marks | avg(marks) |
++-----------+-------+------------+
+| c001      |    90 |    88.1667 |
++-----------+-------+------------+
+1 row in set (0.00 sec)
