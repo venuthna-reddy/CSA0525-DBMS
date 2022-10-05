@@ -96,7 +96,7 @@ output:<br/>
 ![7-4](https://user-images.githubusercontent.com/113232880/194057672-d0feebff-cbea-4f28-b920-b5b62d2e5639.png)
 
 ##Experiment-8-SUB QUERY & CORRELATED QUERY LINK-https://github.com/venuthna-reddy/CSA0525-DBMS/blob/main/Exp-8
-output:br/>
+output:<br/>
 1.<br/>
 ![8-1](https://user-images.githubusercontent.com/113232880/194070896-6c4fc6e8-3440-4ab0-bb3c-056da3185fb7.png)
 2.<br/>
