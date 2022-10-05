@@ -38,7 +38,7 @@ output:<br/>
 6.<br/>
 ![16](https://user-images.githubusercontent.com/113232880/193842586-d0ccd8d4-2377-4555-b544-80acb3015970.png)
 
-##Rxperiment-5-SELECT WITH VARIOUS CLAUSE-WHERE,PATTERN MATCHING LINK-https://github.com/venuthna-reddy/CSA0525-DBMS/blob/main/Exp-5
+##Experiment-5-SELECT WITH VARIOUS CLAUSE-WHERE,PATTERN MATCHING LINK-https://github.com/venuthna-reddy/CSA0525-DBMS/blob/main/Exp-5
 output:<br/>
 1.<br/>
 ![5-1](https://user-images.githubusercontent.com/113232880/193886894-95251d87-11e8-459b-9cb5-f4401f9dd72d.png)
@@ -60,3 +60,26 @@ output:<br/>
 ![5-9](https://user-images.githubusercontent.com/113232880/193887695-98aab557-12c4-439a-89db-6f792c756c18.png)
 10.<br/>
 ![5-10](https://user-images.githubusercontent.com/113232880/193887780-e646262c-f93a-4d00-8b3e-d0c73b79c4df.png)
+
+##Experiment-6-select with various clause link-https://github.com/venuthna-reddy/CSA0525-DBMS/blob/main/Exp-6
+output:<br/>
+1.<br/>
+![6-1](https://user-images.githubusercontent.com/113232880/194048657-4023e99d-598c-4aec-9b18-f82ab0dc84d0.png)
+2.<br/>
+![6-2](https://user-images.githubusercontent.com/113232880/194048760-217d5ee2-e3fa-48d3-9f4f-87277d2b15d1.png)
+3.<br/>
+![6-3](https://user-images.githubusercontent.com/113232880/194048815-231d17f2-0baa-4900-a0e3-fda71d2cd16e.png)
+4.<br/>
+![6-4](https://user-images.githubusercontent.com/113232880/194048880-290eb527-50a5-46e1-94b1-f3070987dbc4.png)
+5.<br/>
+![6-5](https://user-images.githubusercontent.com/113232880/194048932-7ecc259a-2325-48ec-9064-57290c251ef4.png)
+6.<br/>
+![6-6](https://user-images.githubusercontent.com/113232880/194048997-d6396f04-80ff-4d04-9e8a-7e8465987f9f.png)
+7.<br/>
+![6-7](https://user-images.githubusercontent.com/113232880/194049038-45508bbf-cbdd-4436-9f24-a631f03addd0.png)
+8.<br/>
+![6-8](https://user-images.githubusercontent.com/113232880/194049086-d175bee6-1a05-4170-8919-b3460fedab03.png)
+9.<br/>
+![6-9](https://user-images.githubusercontent.com/113232880/194049174-781ffe2d-e5fe-41cc-b3a1-b3248ff0da7e.png)
+10.<br/>
+![6-10](https://user-images.githubusercontent.com/113232880/194049231-92240874-0490-4b2c-9616-bae488ee54bc.png)
