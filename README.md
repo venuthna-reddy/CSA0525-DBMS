@@ -116,3 +116,5 @@ output:<br/>
 ![11-1](https://user-images.githubusercontent.com/113232880/194132040-3802c9bb-183e-4d4f-84f2-638c98f5d0ff.png)
 2.<br/>
 ![11-2](https://user-images.githubusercontent.com/113232880/194132104-ad05eaa4-223f-4e83-a69d-792000dcd6b5.png)
+
+##Experiment-12-SIMPLE PROGRAMMING EXERCISE USING (CASE AND LOOP) LIMK-
