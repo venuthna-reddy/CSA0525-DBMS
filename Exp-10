@@ -1,0 +1,36 @@
+mysql> use student;
+Database changed
+mysql> select*from stu;
++--------+---------+------+--------+------------+----------+-----------+----------+
+| Rollno | Name    | Dept | Gender | DOB        | city     | mobile_no | courseno |
++--------+---------+------+--------+------------+----------+-----------+----------+
+| 192011 | amit    | cse  | M      | 1998-01-22 | chennai  |     91007 | c001     |
+| 192012 | raju    | cse  | M      | 2000-01-22 | chennai  |     93409 | c001     |
+| 192013 | sasi    | cse  | M      | 2003-01-22 | chennai  |      3409 | c002     |
+| 192014 | rakhi   | cse  | M      | 2003-06-15 | kerala   |      9848 | c003     |
+| 192015 | divya   | cse  | F      | 2003-07-22 | chittoor |      6890 | c001     |
+| 192016 | anupama | cse  | F      | 2003-11-22 | chittoor |      6790 | c001     |
+| 192017 | sushma  | cse  | F      | 2003-12-22 | chittoor |      1234 | c002     |
++--------+---------+------+--------+------------+----------+-----------+----------+
+7 rows in set (0.00 sec)
+
+mysql> create view stu_view as
+    -> select Rollno,Name,DOB from stu;
+ERROR 1050 (42S01): Table 'stu_view' already exists
+mysql> create view std_view as
+    -> select Rollno,Name,DOB from stu;
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> select * from std_view;
++--------+---------+------------+
+| Rollno | Name    | DOB        |
++--------+---------+------------+
+| 192011 | amit    | 1998-01-22 |
+| 192012 | raju    | 2000-01-22 |
+| 192013 | sasi    | 2003-01-22 |
+| 192014 | rakhi   | 2003-06-15 |
+| 192015 | divya   | 2003-07-22 |
+| 192016 | anupama | 2003-11-22 |
+| 192017 | sushma  | 2003-12-22 |
++--------+---------+------------+
+7 rows in set (0.00 sec)
