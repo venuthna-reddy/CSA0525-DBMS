@@ -109,3 +109,10 @@ output:<br/>
 ##EXPERIMENT-10-VIEW,INDEX,SEQUENCE link-https://github.com/venuthna-reddy/CSA0525-DBMS/blob/main/Exp-10
 output:<br/>
 ![10](https://user-images.githubusercontent.com/113232880/194099943-c966b310-27a5-475f-8a54-ad451bbf772a.png)
+
+##Experiment-11-SIMPLE PROGRAMMING EXERCISE USING(REPEAT,WHILE) limk-https://github.com/venuthna-reddy/CSA0525-DBMS/blob/main/Exp-11
+output:<br/>
+1.<br/>
+![11-1](https://user-images.githubusercontent.com/113232880/194132040-3802c9bb-183e-4d4f-84f2-638c98f5d0ff.png)
+2.<br/>
+![11-2](https://user-images.githubusercontent.com/113232880/194132104-ad05eaa4-223f-4e83-a69d-792000dcd6b5.png)
