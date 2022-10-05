@@ -1,0 +1,220 @@
+mysql> select * from cour;
++-----------+--------------+-------------+--------+---------+--------+------------+
+| course_no | course_desc  | course_type | sem_no | hall_no | fal_no | coure_type |
++-----------+--------------+-------------+--------+---------+--------+------------+
+| 1         | COMPUTER_SCI | M           | 1      | 4       | 2001   | program    |
+| 2         | AI           | M           | 3      | 67      | 2002   | program    |
+| 3         | ENGLISH      | M           | 1      | 1       | 2005   | statis     |
+| 4         | ETHICS       | E           | 2      | 55      | 2004   | statis     |
+| 5         | DATA_STRUCT  | M           | 6      | 44      | 2003   | program    |
++-----------+--------------+-------------+--------+---------+--------+------------+
+5 rows in set (0.00 sec)
+mysql> select * from cour where coure_type in ('program');
++-----------+--------------+-------------+--------+---------+--------+------------+
+| course_no | course_desc  | course_type | sem_no | hall_no | fal_no | coure_type |
++-----------+--------------+-------------+--------+---------+--------+------------+
+| 1         | COMPUTER_SCI | M           | 1      | 4       | 2001   | program    |
+| 2         | AI           | M           | 3      | 67      | 2002   | program    |
+| 5         | DATA_STRUCT  | M           | 6      | 44      | 2003   | program    |
++-----------+--------------+-------------+--------+---------+--------+------------+
+3 rows in set (0.02 sec)
+
+mysql> select * from cour where cour_type in ('statis');
+ERROR 1054 (42S22): Unknown column 'cour_type' in 'where clause'
+mysql> select * from cour where coure_type in ('statis');
++-----------+-------------+-------------+--------+---------+--------+------------+
+| course_no | course_desc | course_type | sem_no | hall_no | fal_no | coure_type |
++-----------+-------------+-------------+--------+---------+--------+------------+
+| 3         | ENGLISH     | M           | 1      | 1       | 2005   | statis     |
+| 4         | ETHICS      | E           | 2      | 55      | 2004   | statis     |
++-----------+-------------+-------------+--------+---------+--------+------------+
+2 rows in set (0.00 sec)
+mysql> use student;
+Database changed
+mysql> create table reg(course_no varchar(4),rollno int,marks int);
+Query OK, 0 rows affected (0.01 sec)
+mysql> insert into reg values('c001',192011273,80);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into reg values('c001',192011001,25);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into reg values('c001',192011067,35);
+Query OK, 1 row affected (0.02 sec)
+
+mysql> insert into reg values('c002',192011197,75);
+Query OK, 1 row affected (0.02 sec)
+
+mysql> insert into reg values('c003',192011274,67);
+Query OK, 1 row affected (0.02 sec)
+
+mysql> select * from reg;
++-----------+-----------+-------+
+| course_no | rollno    | marks |
++-----------+-----------+-------+
+| c001      | 192011273 |    80 |
+| c001      | 192011001 |    25 |
+| c001      | 192011067 |    35 |
+| c002      | 192011197 |    75 |
+| c003      | 192011274 |    67 |
++-----------+-----------+-------+
+5 rows in set (0.00 sec)
+
+mysql> select course_no from reg where marks between 50 and 80;
++-----------+
+| course_no |
++-----------+
+| c001      |
+| c002      |
+| c003      |
++-----------+
+3 rows in set (0.01 sec)
+mysql> create table reg(course_no varchar(4),rollno int,marks int,sem_no int);
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> insert into reg values('c001',192011273,80,4);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into reg values('c001',192011001,25,1);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into reg values('c001',192011067,35,2);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into reg values('c002',192011274,75,3);
+Query OK, 1 row affected (0.02 sec)
+
+mysql> insert into reg values('c003',192011197,67,5);
+Query OK, 1 row affected (0.02 sec)
+
+mysql> insert into reg values('c002',192011290,57,3);
+Query OK, 1 row affected (0.02 sec)
+
+mysql> insert into reg values('c002',192011291,89,9);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into reg values('c002',192011292,78,7);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into reg values('c021',192011293,68,1);
+Query OK, 1 row affected (0.02 sec)
+
+mysql> insert into reg values('c021',192011294,79,5);
+Query OK, 1 row affected (0.02 sec)
+
+mysql> insert into reg values('c021',192011295,46,5);
+Query OK, 1 row affected (0.02 sec)
+
+mysql> select * from reg;
++-----------+-----------+-------+--------+
+| course_no | rollno    | marks | sem_no |
++-----------+-----------+-------+--------+
+| c001      | 192011273 |    80 |      4 |
+| c001      | 192011001 |    25 |      1 |
+| c001      | 192011067 |    35 |      2 |
+| c002      | 192011274 |    75 |      3 |
+| c003      | 192011197 |    67 |      5 |
+| c002      | 192011290 |    57 |      3 |
+| c002      | 192011291 |    89 |      9 |
+| c002      | 192011292 |    78 |      7 |
+| c021      | 192011293 |    68 |      1 |
+| c021      | 192011294 |    79 |      5 |
+| c021      | 192011295 |    46 |      5 |
++-----------+-----------+-------+--------+
+11 rows in set (0.00 sec)
+
+mysql> select course_no,avg(marks) from reg where course_no='c002';
++-----------+------------+
+| course_no | avg(marks) |
++-----------+------------+
+| c002      |    74.7500 |
++-----------+------------+
+1 row in set (0.00 sec)
+
+mysql> select course_no,min(marks),max(marks) from reg where course_no='c021';
++-----------+------------+------------+
+| course_no | min(marks) | max(marks) |
++-----------+------------+------------+
+| c021      |         46 |         79 |
++-----------+------------+------------+
+1 row in set (0.00 sec)
+
+mysql> select course_no,min(marks),max(marks),avg(marks) from reg where sem_no='5';
++-----------+------------+------------+------------+
+| course_no | min(marks) | max(marks) | avg(marks) |
++-----------+------------+------------+------------+
+| c003      |         46 |         79 |    64.0000 |
++-----------+------------+------------+------------+
+1 row in set (0.02 sec)
+
+mysql> select course_no,min(marks),max(marks),avg(marks) from reg where course_no='c001';
++-----------+------------+------------+------------+
+| course_no | min(marks) | max(marks) | avg(marks) |
++-----------+------------+------------+------------+
+| c001      |         25 |         80 |    46.6667 |
++-----------+------------+------------+------------+
+1 row in set (0.00 sec)
+
+mysql>  select course_no,avg(marks) from reg where course_no='c001';
++-----------+------------+
+| course_no | avg(marks) |
++-----------+------------+
+| c001      |    46.6667 |
++-----------+------------+
+1 row in set (0.00 sec)
+
+mysql> select course_no,avg(marks) from reg where course_no='c002';
++-----------+------------+
+| course_no | avg(marks) |
++-----------+------------+
+| c002      |    74.7500 |
++-----------+------------+
+1 row in set (0.02 sec)
+
+mysql> select course_no,avg(marks) from reg where course_no='c003';
++-----------+------------+
+| course_no | avg(marks) |
++-----------+------------+
+| c003      |    67.0000 |
++-----------+------------+
+1 row in set (0.00 sec)
+
+mysql> select sum(marks) from reg;
++------------+
+| sum(marks) |
++------------+
+|        699 |
++------------+
+1 row in set (0.00 sec)
+
+mysql> select course_no,count(course_no) from reg where course_no='c001';
++-----------+------------------+
+| course_no | count(course_no) |
++-----------+------------------+
+| c001      |                3 |
++-----------+------------------+
+1 row in set (0.02 sec)
+
+mysql> select course_no,count(course_no) from reg where course_no='c002';
++-----------+------------------+
+| course_no | count(course_no) |
++-----------+------------------+
+| c002      |                4 |
++-----------+------------------+
+1 row in set (0.00 sec)
+
+mysql> select course_no,count(course_no) from reg where course_no='c003';
++-----------+------------------+
+| course_no | count(course_no) |
++-----------+------------------+
+| c003      |                1 |
++-----------+------------------+
+1 row in set (0.00 sec)
+
+mysql> select count(course_no) from reg;
++------------------+
+| count(course_no) |
++------------------+
+|               11 |
++------------------+
+1 row in set (0.00 sec)
