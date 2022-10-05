@@ -117,4 +117,9 @@ output:<br/>
 2.<br/>
 ![11-2](https://user-images.githubusercontent.com/113232880/194132104-ad05eaa4-223f-4e83-a69d-792000dcd6b5.png)
 
-##Experiment-12-SIMPLE PROGRAMMING EXERCISE USING (CASE AND LOOP) LIMK-
+##Experiment-12-SIMPLE PROGRAMMING EXERCISE USING (CASE AND LOOP) LINK-https://github.com/venuthna-reddy/CSA0525-DBMS/blob/main/Exp-12
+output:<br/>
+![12-1](https://user-images.githubusercontent.com/113232880/194138122-6c22cec2-047b-45d5-a25e-95f0c5c4428c.png)
+2.<br/>
+![12-2](https://user-images.githubusercontent.com/113232880/194138186-9eadbd57-a9c0-423f-a559-45a9cc0d1377.png)
+
