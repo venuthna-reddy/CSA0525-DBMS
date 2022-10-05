@@ -106,3 +106,6 @@ output:<br/>
 4.<br/>
 ![8-4](https://user-images.githubusercontent.com/113232880/194071118-d1d7fa0a-dfea-48ea-a247-350e10360104.png)
 
+##EXPERIMENT-10-VIEW,INDEX,SEQUENCE link-https://github.com/venuthna-reddy/CSA0525-DBMS/blob/main/Exp-10
+output:<br/>
+![10](https://user-images.githubusercontent.com/113232880/194099943-c966b310-27a5-475f-8a54-ad451bbf772a.png)
