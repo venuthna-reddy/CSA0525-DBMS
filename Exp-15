@@ -1,0 +1,77 @@
+mysql> use student;
+Database changed
+mysql> delimiter //
+mysql> create procedure mentee_info()
+    -> begin
+    -> select * from stu;
+    -> end;//
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> call mentee_info();
+    -> //
++--------+---------+------+--------+------------+----------+-----------+----------+
+| Rollno | Name    | Dept | Gender | DOB        | city     | mobile_no | courseno |
++--------+---------+------+--------+------------+----------+-----------+----------+
+| 192011 | amit    | cse  | M      | 1998-01-22 | chennai  |     91007 | c001     |
+| 192012 | raju    | cse  | M      | 2000-01-22 | chennai  |     93409 | c001     |
+| 192013 | sasi    | cse  | M      | 2003-01-22 | chennai  |      3409 | c002     |
+| 192014 | rakhi   | cse  | M      | 2003-06-15 | kerala   |      9848 | c003     |
+| 192015 | divya   | cse  | F      | 2003-07-22 | chittoor |      6890 | c001     |
+| 192016 | anupama | cse  | F      | 2003-11-22 | chittoor |      6790 | c001     |
+| 192017 | sushma  | cse  | F      | 2003-12-22 | chittoor |      1234 | c002     |
++--------+---------+------+--------+------------+----------+-----------+----------+
+7 rows in set (0.00 sec)
+
+Query OK, 0 rows affected (0.02 sec)
+mysql> use customer;
+Database changed
+mysql> create table customer(cust_no int,customer_name varchar(15),credit_limit int);
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> insert into customer values(001,'vinu',55000);
+Query OK, 1 row affected (0.02 sec)
+
+mysql> insert into customer values(002,'divya',50000);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into customer values(003,'manu',11000);
+Query OK, 1 row affected (0.02 sec)
+
+mysql> insert into customer values(004,'greesh',100000);
+Query OK, 1 row affected (0.01 sec)
+mysql>  delimiter //
+mysql> create procedure get_customer_level2(
+    -> in customer_no int,
+    -> out customer_level varchar(14))
+    -> begin
+    -> declare credit_lim int;
+    -> declare cust_level varchar(14);
+    -> set cust_level=' ';
+    ->  select credit_limit into credit_lim
+    ->  from customer
+    -> where customer_no=customer.cust_no;
+    ->  if credit_lim>50000 then
+    -> set customer_level='platinum';
+    -> elseif(credit_lim <= 50000 and credit_lim >=10000) then
+    -> set customer_level='gold';
+    ->  elseif credit_lim<10000 then
+    -> set customer_level='silver';
+    -> end if;
+    -> end; //
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> delimiter;
+    -> //
+mysql> call get_customer_level2(003,@customer_level);
+    -> //
+Query OK, 1 row affected (0.00 sec)
+
+mysql> select @customer_level as final;
+    -> //
++-------+
+| final |
++-------+
+| gold  |
++-------+
+1 row in set (0.00 sec)
+
