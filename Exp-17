@@ -1,0 +1,46 @@
+mysql> use student;
+Database changed
+mysql> create table employees(id int,name varchar(100),email varchar(100));
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> insert into employees(id,name,email)values(1,"Harry Potter","pharry@warnerbros.com");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into employees(id,name,email)values(2,"Clark Kent","Kclark@dccomics.com");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into employees(id,name,email)values(3,"Tony Stark","stony@marvel.com");
+Query OK, 1 row affected (0.02 sec)
+
+mysql> delimiter $$
+mysql> create procedure build_email_list(inout email_list varchar(4000))
+    -> begin
+    -> declare v_finished integer default 0;
+    -> declare v_email varchar(100) default "";
+    -> declare email_cursor cursor for select email from employees;
+    -> declare continue handler for not found set v_finished =1;
+    -> open email_cursor;
+    -> get_email:loop
+    -> fetch email_cursor into v_email;
+    -> if v_finished =1 then
+    -> leave get_email;
+    -> end if;
+    -> set email_list = concat(v_email,";",email_list);
+    -> end loop get_email;
+    -> close email_cursor;
+    -> end$$
+Query OK, 0 rows affected (0.02 sec)
+mysql> DELIMITER ;
+mysql> SET @email_list = "";
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> CALL build_email_list(@email_list);
+Query OK, 0 rows affected (0.04 sec)
+
+mysql> SELECT @email_list;
++-------------------------------------------------------------+
+| @email_list                                                 |
++-------------------------------------------------------------+
+| stony@marvel.com;kclark@dccomics.com;pharry@warnerbros.com; |
++-------------------------------------------------------------+
+1 row in set (0.00 sec)
