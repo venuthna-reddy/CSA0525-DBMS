@@ -155,3 +155,9 @@ output:<br/>
 ![16-1](https://user-images.githubusercontent.com/113232880/194353395-2cabc3da-af1f-477f-ae4a-42820de07088.png)
 2.<br/>
 ![16-2](https://user-images.githubusercontent.com/113232880/194353482-b074ca86-ca91-41eb-8e9c-f1a82240da12.png)
+
+##Experiment-17-HIGH LEVEL LANGUAGE EXTENSIONS WITH CURSORS LINK-https://github.com/venuthna-reddy/CSA0525-DBMS/blob/main/Exp-17
+output:<br/>
+1.<br/>
+![17](https://user-images.githubusercontent.com/113232880/194381022-240d9d41-0620-4696-960f-d1bf5d6e98aa.png)
+
