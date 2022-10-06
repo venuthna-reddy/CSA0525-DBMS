@@ -1,0 +1,91 @@
+create database class;
+Query OK, 1 row affected (0.00 sec)
+
+mysql> use class;
+Database changed
+mysql> create table class(register_no int not null,student_namr varchar(20) not null,marks int not null,student_grade varchar(1) not null);
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> desc class;
++---------------+-------------+------+-----+---------+-------+
+| Field         | Type        | Null | Key | Default | Extra |
++---------------+-------------+------+-----+---------+-------+
+| register_no   | int(11)     | NO   |     | NULL    |       |
+| student_namr  | varchar(20) | NO   |     | NULL    |       |
+| marks         | int(11)     | NO   |     | NULL    |       |
+| student_grade | varchar(1)  | NO   |     | NULL    |       |
++---------------+-------------+------+-----+---------+-------+
+4 rows in set (0.02 sec)
+
+mysql> insert into class values(001,'vinu',92,'S');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into class values(002,'divya',68,'D');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into class values(003,'sai',75,'C');
+Query OK, 1 row affected (0.02 sec)
+
+mysql> insert into class values(004,'niki',56,'E');
+Query OK, 1 row affected (0.02 sec)
+
+mysql> insert into class values(005,'manu',89,'B');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> start transaction;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> insert into class values(006,'greeshu',90,'A');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into class values(007,'viswa',67,'D');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> savepoint s2;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> insert into class values(008,'ahshay',87,'B');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into class values(009,'deepu',96,'S');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> savepoint s3;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> insert into class values(010,'roshi',55,'E');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> rollback to s3;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> select * from class;
++-------------+--------------+-------+---------------+
+| register_no | student_namr | marks | student_grade |
++-------------+--------------+-------+---------------+
+|           1 | vinu         |    92 | S             |
+|           2 | divya        |    68 | D             |
+|           3 | sai          |    75 | C             |
+|           4 | niki         |    56 | E             |
+|           5 | manu         |    89 | B             |
+|           6 | greeshu      |    90 | A             |
+|           7 | viswa        |    67 | D             |
+|           8 | ahshay       |    87 | B             |
+|           9 | deepu        |    96 | S             |
++-------------+--------------+-------+---------------+
+9 rows in set (0.00 sec)
+
+mysql> rollback to s2;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> select * from class;
++-------------+--------------+-------+---------------+
+| register_no | student_namr | marks | student_grade |
++-------------+--------------+-------+---------------+
+|           1 | vinu         |    92 | S             |
+|           2 | divya        |    68 | D             |
+|           3 | sai          |    75 | C             |
+|           4 | niki         |    56 | E             |
+|           5 | manu         |    89 | B             |
+|           6 | greeshu      |    90 | A             |
+|           7 | viswa        |    67 | D             |
