@@ -106,7 +106,7 @@ output:<br/>
 4.<br/>
 ![8-4](https://user-images.githubusercontent.com/113232880/194071118-d1d7fa0a-dfea-48ea-a247-350e10360104.png)
 
-##Experiment-9-JOINS link
+##Experiment-9-JOINS link-https://github.com/venuthna-reddy/CSA0525-DBMS/blob/main/Exp-9
 output:<br/>
 1.<br/>
 ![9-1](https://user-images.githubusercontent.com/113232880/194371113-3789883f-d855-4f18-8937-3c172ff0aba7.jpeg)
