@@ -128,4 +128,8 @@ output:<br/>
 1.<br/>
 ![13](https://user-images.githubusercontent.com/113232880/194224433-df7474f6-4842-40be-824d-8df5c72a835f.png)
 
+##Experiment-14-DCL COMMANDS-linkhttps://github.com/venuthna-reddy/CSA0525-DBMS/blob/main/Exp-14
+output:<br/>
+1.<br/>
+![14](https://user-images.githubusercontent.com/113232880/194228601-ba3c6d52-f668-43fd-9429-cd60f6f043fa.png)
 
