@@ -123,5 +123,9 @@ output:<br/>
 2.<br/>
 ![12-2](https://user-images.githubusercontent.com/113232880/194138186-9eadbd57-a9c0-423f-a559-45a9cc0d1377.png)
 
-##Experiment-13-TCL COMMANDS Link-
+##Experiment-13-TCL COMMANDS Link-https://github.com/venuthna-reddy/CSA0525-DBMS/blob/main/Exp-12
+output:<br/>
+1.<br/>
+![13](https://user-images.githubusercontent.com/113232880/194224433-df7474f6-4842-40be-824d-8df5c72a835f.png)
+
 
