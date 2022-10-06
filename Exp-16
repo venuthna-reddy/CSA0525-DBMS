@@ -1,0 +1,69 @@
+mysql> use department;
+Database changed
+mysql> delimiter //
+mysql> create function customer(cre_lim int)
+    -> returns varchar(20)
+    -> deterministic
+    -> begin
+    -> declare customer_level varchar(20);
+    -> set customer_level=' ';
+    -> if cre_lim >50000 then
+    -> set customer_level='platinum';
+    -> elseif cre_lim <=50000 and cre_lim>=10000 then
+    -> set customer_level='gold';
+    -> elseif cre_lim<10000 then
+    -> set customer_level='silver';
+    -> end if;
+    -> return customer_level;
+    -> end //
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> select customer(40000);
+    -> //
++-----------------+
+| customer(40000) |
++-----------------+
+| gold            |
++-----------------+
+1 row in set (0.00 sec)
+
+mysql> select customer(550000);
+    -> //
++------------------+
+| customer(550000) |
++------------------+
+| platinum         |
++------------------+
+1 row in set (0.00 sec)
+mysql>  delimiter $$
+mysql> create procedure find_facto(in n int)
+    -> begin
+    -> set @@global.max_sp_recursion_depth =255;
+    -> set @@session.max_sp_recursion_depth=255;
+    -> call factorial(n,@fact);
+    ->  select @fact;
+    -> end
+    -> $$
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> delimiter $$
+mysql> create procedure factoriall(in n int,out fact  int)
+    -> begin
+    -> if n=1 then
+    -> set fact:=1;
+    -> else
+    -> call factorial(n-1,fact);
+    -> set fact:=n*fact;
+    -> end if;
+    -> end
+    -> $$
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> call find_facto(5);
+    -> $$
++-------+
+| @fact |
++-------+
+|   120 |
++-------+
+1 row in set (0.00 sec)
