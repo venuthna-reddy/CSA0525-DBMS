@@ -106,6 +106,15 @@ output:<br/>
 4.<br/>
 ![8-4](https://user-images.githubusercontent.com/113232880/194071118-d1d7fa0a-dfea-48ea-a247-350e10360104.png)
 
+##Experiment-9-JOINS link
+output:<br/>
+1.<br/>
+![9-1](https://user-images.githubusercontent.com/113232880/194371113-3789883f-d855-4f18-8937-3c172ff0aba7.jpeg)
+2.<br/>
+![9-2](https://user-images.githubusercontent.com/113232880/194371184-c7d2fcbb-5dee-4bd4-bf32-e4c5b2d4fe59.jpeg)
+3.<br/>
+![9-3](https://user-images.githubusercontent.com/113232880/194371233-f4fbe5ed-db26-4aff-bc4b-0b8e3486519a.jpeg)
+
 ##EXPERIMENT-10-VIEW,INDEX,SEQUENCE link-https://github.com/venuthna-reddy/CSA0525-DBMS/blob/main/Exp-10
 output:<br/>
 ![10](https://user-images.githubusercontent.com/113232880/194099943-c966b310-27a5-475f-8a54-ad451bbf772a.png)
