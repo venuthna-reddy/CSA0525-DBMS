@@ -128,8 +128,21 @@ output:<br/>
 1.<br/>
 ![13](https://user-images.githubusercontent.com/113232880/194224433-df7474f6-4842-40be-824d-8df5c72a835f.png)
 
-##Experiment-14-DCL COMMANDS-linkhttps://github.com/venuthna-reddy/CSA0525-DBMS/blob/main/Exp-14
+##Experiment-14-DCL COMMANDS-link-https://github.com/venuthna-reddy/CSA0525-DBMS/blob/main/Exp-14
 output:<br/>
 1.<br/>
 ![14](https://user-images.githubusercontent.com/113232880/194228601-ba3c6d52-f668-43fd-9429-cd60f6f043fa.png)
 
+##Experiment-15-HIGH LEVEL PROGRAMMING EXTENSIONS(PROCEDURES) limk-https://github.com/venuthna-reddy/CSA0525-DBMS/blob/main/Exp-15
+output:<br/>
+1.<br/>
+![15-1](https://user-images.githubusercontent.com/113232880/194352730-d8f4751f-9c42-481c-a4e7-78963bd67ce7.png)
+2.<br/>
+![15-2](https://user-images.githubusercontent.com/113232880/194352823-ba97d314-aede-4d3d-9066-17008f855f9b.png)
+
+##Experiment-16-HIGH LEVEL PROGRAMMING EXTENSIONS(FUNCTIONS) link-
+output:<br/>
+1.<br/>
+![16-1](https://user-images.githubusercontent.com/113232880/194353395-2cabc3da-af1f-477f-ae4a-42820de07088.png)
+2.<br/>
+![16-2](https://user-images.githubusercontent.com/113232880/194353482-b074ca86-ca91-41eb-8e9c-f1a82240da12.png)
