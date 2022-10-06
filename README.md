@@ -161,3 +161,7 @@ output:<br/>
 1.<br/>
 ![17](https://user-images.githubusercontent.com/113232880/194381022-240d9d41-0620-4696-960f-d1bf5d6e98aa.png)
 
+##Experiment-18-TRIGGER link-https://github.com/venuthna-reddy/CSA0525-DBMS/blob/main/Exp-18
+output:<br/>
+1.<br</>
+![18](https://user-images.githubusercontent.com/113232880/194382074-58803d65-70f7-4167-b308-b7a47dacfc3f.png)
