@@ -1,0 +1,48 @@
+mysql> select faculty.facname,dept.deptno,dept.deptname from faculty cross join dept;
++---------+--------+----------+
+| facname | deptno | deptname |
++---------+--------+----------+
+| priya   |      1 | AI       |
+| priya   |      2 | cse      |
+| priya   |      1 | VLSI     |
+| priya   |      4 | physics  |
++---------+--------+----------+
+4 rows in set (0.00 sec)
+2)
+mysql> select student.name,course.courseno from student inner join course on courseno;
++---------+----------+
+| name    | courseno |
++---------+----------+
+| Yukesh  |        1 |
+| Yukesh  |        1 |
+| Yukesh  |        1 |
+| Yukesh  |        2 |
+| priya   |        1 |
+| priya   |        1 |
+| priya   |        1 |
+| priya   |        2 |
+| raju    |        1 |
+| raju    |        1 |
+| raju    |        1 |
+| raju    |        2 |
+| hari    |        1 |
+| hari    |        1 |
+| hari    |        1 |
+| hari    |        2 |
+| nithish |        1 |
+| nithish |        1 |
+| nithish |        1 |
+| nithish |        2 |
++---------+----------+
+20 rows in set (0.00 sec)
+3)
+mysql> select faculty.facname,dept.deptno,dept.deptname from faculty cross join dept;
++---------+--------+----------+
+| facname | deptno | deptname |
++---------+--------+----------+
+| priya   |      1 | AI       |
+| priya   |      2 | cse      |
+| priya   |      1 | VLSI     |
+| priya   |      4 | physics  |
++---------+--------+----------+
+4 rows in set (0.00 sec)
