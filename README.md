@@ -164,9 +164,22 @@ output:<br/>
 ##Experiment-18-TRIGGER link-https://github.com/venuthna-reddy/CSA0525-DBMS/blob/main/Exp-18
 output:<br/>
 1.<br</>
-![18](https://user-images.githubusercontent.com/113232880/194382074-58803d65-70f7-4167-b308-b7a47dacfc3f.png)
+![18](https://user-images.githubusercontent.com/113232880/194382074-58803d65-70f7-4167-b308-b7a47dacfc3f.png19
 
-##Experiment-21-CASE STUDY-1 LINK-https://github.com/venuthna-reddy/CSA0525-DBMS/blob/main/Exp-21
+##Experiment-19 https://github.com/venuthna-reddy/CSA0525-DBMS/blob/main/Exp-19
+output:<br/>
+1.![Screenshot (2)](https://user-images.githubusercontent.com/113232410/194365929-ead6e439-7f00-43ab-9b75-3feafa6f8335.png)
+   2. <img width="796" alt="48(19)" src="https://user-images.githubusercontent.com/113232410/194365987-d0d6625d-447a-45ba-abc4-fc5bd7be3d84.png">
+  
+  ##Experiment-20 https://github.com/venuthna-reddy/CSA0525-DBMS/blob/main/Exp-20
+  output:<br/>
+   1.<br/>
+   ![Screenshot (1)](https://user-images.githubusercontent.com/113232410/194365177-8240977d-ab20-46a7-836a-648688d0b386.png)<br/>
+   2.<br/>
+   <img width="427" alt="47(18)" src="https://user-images.githubusercontent.com/113232410/194362751-3cc274b7-621d-4123-8710-9914d0677fab.png"><br/>
+  
+  
+##Experiment-22-CASE STUDY-1 LINK-https://github.com/venuthna-reddy/CSA0525-DBMS/blob/main/Exp-21
 output:<br/>
 1.<br/>
 ![21-1](https://user-images.githubusercontent.com/113232880/194585408-cce3ef6e-9fb5-4b0f-9a58-fb1a3ee22b05.png)
@@ -181,3 +194,28 @@ output:<br/>
 ![22-1](https://user-images.githubusercontent.com/113232880/194591792-51e9a901-2024-417b-9dbd-049fb38ae7cf.png)
 2.<br/>
 ![22-2](https://user-images.githubusercontent.com/113232880/194591846-612bcb36-7370-4733-b7de-24af84186ce1.png)
+
+
+
+##Experiment-23 https://github.com/venuthna-reddy/CSA0525-DBMS/blob/main/EXP-23
+output:<br/>
+1.![WhatsApp Image 2022-10-07 at 8 37 04 PM](https://user-images.githubusercontent.com/113232410/194589022-3311a0bb-ddc1-4725-9501-f8d077abe4ae.jpeg)
+
+  2.![WhatsApp Image 2022-10-07 at 8 37 15 PM](https://user-images.githubusercontent.com/113232410/194588911-b155d016-74da-4aba-9c5f-3230d1066b0c.jpeg)
+
+
+
+##Experiment-24 https://github.com/venuthna-reddy/CSA0525-DBMS/blob/main/Exp-24
+output:<br/>
+  1.![WhatsApp Image 2022-10-07 at 8 37 04 PM](https://user-images.githubusercontent.com/113232410/194588715-a41db99c-9683-41e1-b723-8d9df640abd2.jpeg)
+2.![WhatsApp Image 2022-10-07 at 8 37 15 PM](https://user-images.githubusercontent.com/113232410/194588840-5136c4d9-34c4-4316-8bc7-5afc46462d58.jpeg)
+
+
+
+##Experiment-25 https://github.com/venuthna-reddy/CSA0525-DBMS/blob/main/Exp-25
+output:<br/>
+ ![WhatsApp Image 2022-10-07 at 8 41 55 PM](https://user-images.githubusercontent.com/113232410/194590523-067313a5-65c8-4a87-9bee-81295df23208.jpeg)
+
+  ![WhatsApp Image 2022-10-07 at 8 43 47 PM](https://user-images.githubusercontent.com/113232410/194590553-3dd7ec98-8082-461b-9ee3-493e1c3ca9f4.jpeg)
+  
+  ![WhatsApp Image 2022-10-07 at 8 42 17 PM](https://user-images.githubusercontent.com/113232410/194590634-6e476bdd-1962-4101-946d-525a46a0b5ba.jpeg)
