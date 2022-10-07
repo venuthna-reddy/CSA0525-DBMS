@@ -165,3 +165,13 @@ output:<br/>
 output:<br/>
 1.<br</>
 ![18](https://user-images.githubusercontent.com/113232880/194382074-58803d65-70f7-4167-b308-b7a47dacfc3f.png)
+
+##Experiment-21-CASE STUDY-1 LINK-
+output:<br/>
+1.<br/>
+![21-1](https://user-images.githubusercontent.com/113232880/194585408-cce3ef6e-9fb5-4b0f-9a58-fb1a3ee22b05.png)
+2.<br/>
+![21-2](https://user-images.githubusercontent.com/113232880/194585447-a8446cae-a91b-4384-afa9-e856bbbb70d6.png)
+3.<br/>
+![22-3](https://user-images.githubusercontent.com/113232880/194585516-9bc5df52-84ba-495f-9c5f-2d0de7dab2a4.png)
+
