@@ -166,7 +166,7 @@ output:<br/>
 1.<br</>
 ![18](https://user-images.githubusercontent.com/113232880/194382074-58803d65-70f7-4167-b308-b7a47dacfc3f.png)
 
-##Experiment-21-CASE STUDY-1 LINK-
+##Experiment-21-CASE STUDY-1 LINK-https://github.com/venuthna-reddy/CSA0525-DBMS/blob/main/Exp-21
 output:<br/>
 1.<br/>
 ![21-1](https://user-images.githubusercontent.com/113232880/194585408-cce3ef6e-9fb5-4b0f-9a58-fb1a3ee22b05.png)
