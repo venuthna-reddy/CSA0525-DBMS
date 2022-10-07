@@ -1,0 +1,150 @@
+create database employe;
+Database changed
+mysql> ;create table employe(fname varchar(10),mnit varchar(1),lname varchar(10),ssn varchar(20),birthdate date,address varchar(20),gender varchar(1),salary int,superssn varchar(20),
+ERROR:
+No query specified
+
+    -> dno int);
+
+mysql> desc employe;
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| fname     | varchar(10) | YES  |     | NULL    |       |
+| mnit      | varchar(1)  | YES  |     | NULL    |       |
+| lname     | varchar(10) | YES  |     | NULL    |       |
+| ssn       | varchar(20) | YES  |     | NULL    |       |
+| birthdate | date        | YES  |     | NULL    |       |
+| address   | varchar(20) | YES  |     | NULL    |       |
+| gender    | varchar(1)  | YES  |     | NULL    |       |
+| salary    | int(11)     | YES  |     | NULL    |       |
+| superssn  | varchar(20) | YES  |     | NULL    |       |
+| dno       | int(11)     | YES  |     | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
+10 rows in set (0.02 sec)
+
+mysql> insert into employe values('john','b','smith','1234567890','1965-01-06','washington','m',30000,'333444555',5);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into employe values('franklin','t','wong','333444555','1955-12-06','america','m',40000,'666666555',5);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into employe values('allicia','j','zeiraya','1787267890','1965-07-19','uk','f',25000,'967664321',4);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into employe values('jrnnifer','s','walace','415567890','1965-06-20','france','f',43000,'8886555556',4);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into employe values('ramesh','k','narayan','789567890','1965-09-16','england','m',38000,'333444555',5);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into employe values('joycob','a','english','1234567890','1965-07-31','africa','m',38000,'333444555',5);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into employe values('ahmad','v','jabber','456777890','1965-03-29','italy','f',25000,'967654321',4);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into employe values('james','e','bond','345567890','1965-11-10','washington','m',50000,null,1);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from employe;
++----------+------+---------+------------+------------+------------+--------+--------+------------+------+
+| fname    | mnit | lname   | ssn        | birthdate  | address    | gender | salary | superssn   | dno  |
++----------+------+---------+------------+------------+------------+--------+--------+------------+------+
+| john     | b    | smith   | 1234567890 | 1965-01-06 | washington | m      |  30000 | 333444555  |    5 |
+| franklin | t    | wong    | 333444555  | 1955-12-06 | america    | m      |  40000 | 666666555  |    5 |
+| allicia  | j    | zeiraya | 1787267890 | 1965-07-19 | uk         | f      |  25000 | 967664321  |    4 |
+| jrnnifer | s    | walace  | 415567890  | 1965-06-20 | france     | f      |  43000 | 8886555556 |    4 |
+| ramesh   | k    | narayan | 789567890  | 1965-09-16 | england    | m      |  38000 | 333444555  |    5 |
+| joycob   | a    | english | 1234567890 | 1965-07-31 | africa     | m      |  38000 | 333444555  |    5 |
+| ahmad    | v    | jabber  | 456777890  | 1965-03-29 | italy      | f      |  25000 | 967654321  |    4 |
+| james    | e    | bond    | 345567890  | 1965-11-10 | washington | m      |  50000 | NULL       |    1 |
++----------+------+---------+------------+------------+------------+--------+--------+------------+------+
+8 rows in set (0.01 sec)
+
+mysql> create database dep;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> create table dep(dname varchar(20),dnumber int,
+    -> mgrssn varchar(20),mgrstartdate date);
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> insert into dep values('research',5,'333444555','1966-05-22');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into dep values('administration',4,'987654321','1995-01-01');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into dep values('headquarters',1,'6868665565','1981-06-19');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from dep;
++----------------+---------+------------+--------------+
+| dname          | dnumber | mgrssn     | mgrstartdate |
++----------------+---------+------------+--------------+
+| research       |       5 | 333444555  | 1966-05-22   |
+| administration |       4 | 987654321  | 1995-01-01   |
+| headquarters   |       1 | 6868665565 | 1981-06-19   |
++----------------+---------+------------+--------------+
+3 rows in set (0.00 sec)
+
+mysql> update employe emp set emp.salary=(0.1*emp.salary)+emp.salary where dno=5;
+Query OK, 4 rows affected (0.01 sec)
+Rows matched: 4  Changed: 4  Warnings: 0
+
+mysql> select * from employee;
+ERROR 1146 (42S02): Table 'employe.employee' doesn't exist
+mysql> select * from employe;
++----------+------+---------+------------+------------+------------+--------+--------+------------+------+
+| fname    | mnit | lname   | ssn        | birthdate  | address    | gender | salary | superssn   | dno  |
++----------+------+---------+------------+------------+------------+--------+--------+------------+------+
+| john     | b    | smith   | 1234567890 | 1965-01-06 | washington | m      |  33000 | 333444555  |    5 |
+| franklin | t    | wong    | 333444555  | 1955-12-06 | america    | m      |  44000 | 666666555  |    5 |
+| allicia  | j    | zeiraya | 1787267890 | 1965-07-19 | uk         | f      |  25000 | 967664321  |    4 |
+| jrnnifer | s    | walace  | 415567890  | 1965-06-20 | france     | f      |  43000 | 8886555556 |    4 |
+| ramesh   | k    | narayan | 789567890  | 1965-09-16 | england    | m      |  41800 | 333444555  |    5 |
+| joycob   | a    | english | 1234567890 | 1965-07-31 | africa     | m      |  41800 | 333444555  |    5 |
+| ahmad    | v    | jabber  | 456777890  | 1965-03-29 | italy      | f      |  25000 | 967654321  |    4 |
+| james    | e    | bond    | 345567890  | 1965-11-10 | washington | m      |  50000 | NULL       |    1 |
++----------+------+---------+------------+------------+------------+--------+--------+------------+------+
+8 rows in set (0.00 sec)
+
+mysql> update employe emp set emp.salary=(0.1*emp.salary)+emp.salary where dno=5;
+Query OK, 4 rows affected (0.01 sec)
+Rows matched: 4  Changed: 4  Warnings: 0
+
+mysql> select * from employe;
++----------+------+---------+------------+------------+------------+--------+--------+------------+------+
+| fname    | mnit | lname   | ssn        | birthdate  | address    | gender | salary | superssn   | dno  |
++----------+------+---------+------------+------------+------------+--------+--------+------------+------+
+| john     | b    | smith   | 1234567890 | 1965-01-06 | washington | m      |  36300 | 333444555  |    5 |
+| franklin | t    | wong    | 333444555  | 1955-12-06 | america    | m      |  48400 | 666666555  |    5 |
+| allicia  | j    | zeiraya | 1787267890 | 1965-07-19 | uk         | f      |  25000 | 967664321  |    4 |
+| jrnnifer | s    | walace  | 415567890  | 1965-06-20 | france     | f      |  43000 | 8886555556 |    4 |
+| ramesh   | k    | narayan | 789567890  | 1965-09-16 | england    | m      |  45980 | 333444555  |    5 |
+| joycob   | a    | english | 1234567890 | 1965-07-31 | africa     | m      |  45980 | 333444555  |    5 |
+| ahmad    | v    | jabber  | 456777890  | 1965-03-29 | italy      | f      |  25000 | 967654321  |    4 |
+| james    | e    | bond    | 345567890  | 1965-11-10 | washington | m      |  50000 | NULL       |    1 |
++----------+------+---------+------------+------------+------------+--------+--------+------------+------+
+8 rows in set (0.00 sec)
+
+mysql> select sum(salary),avg(salary),min(salary),max(salary) from employe where dno=4;
++-------------+-------------+-------------+-------------+
+| sum(salary) | avg(salary) | min(salary) | max(salary) |
++-------------+-------------+-------------+-------------+
+|       93000 |  31000.0000 |       25000 |       43000 |
++-------------+-------------+-------------+-------------+
+1 row in set (0.01 sec)
+
+mysql> select fname,lname from employee where exists (select dnumber from dep where dno=5);
+ERROR 1146 (42S02): Table 'employe.employee' doesn't exist
+mysql> select fname,lname from employe where exists (select dnumber from dep where dno=5);
++----------+---------+
+| fname    | lname   |
++----------+---------+
+| john     | smith   |
+| franklin | wong    |
+| ramesh   | narayan |
+| joycob   | english |
++----------+---------+
+4 rows in set (0.00 sec)
