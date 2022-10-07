@@ -175,3 +175,9 @@ output:<br/>
 3.<br/>
 ![22-3](https://user-images.githubusercontent.com/113232880/194585516-9bc5df52-84ba-495f-9c5f-2d0de7dab2a4.png)
 
+##Experiment-22-link-
+output:<br/>
+1.<br/>
+![22-1](https://user-images.githubusercontent.com/113232880/194591792-51e9a901-2024-417b-9dbd-049fb38ae7cf.png)
+2.<br/>
+![22-2](https://user-images.githubusercontent.com/113232880/194591846-612bcb36-7370-4733-b7de-24af84186ce1.png)
