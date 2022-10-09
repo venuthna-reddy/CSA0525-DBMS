@@ -163,7 +163,7 @@ output:<br/>
 
 ##Experiment-18-TRIGGER link-https://github.com/venuthna-reddy/CSA0525-DBMS/blob/main/Exp-18
 output:<br/>
-1.<br</>
+1.<br/>
 ![18](https://user-images.githubusercontent.com/113232880/194382074-58803d65-70f7-4167-b308-b7a47dacfc3f.png19
 
 ##Experiment-19 https://github.com/venuthna-reddy/CSA0525-DBMS/blob/main/Exp-19
